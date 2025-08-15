@@ -1,0 +1,11 @@
+---
+const token = '1d974b5af85f4bc8a3b905210ec5de06';
+---
+{import.meta.env.PROD && (
+  <script
+    is:inline
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon={`{"token":"${token}"}`}
+  ></script>
+)}
